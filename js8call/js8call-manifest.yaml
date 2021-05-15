@@ -1,0 +1,6 @@
+image: hakankoseoglu/js8call:latest
+manifests:
+  - image: hakankoseoglu/js8call:x86_64
+    platform:
+      architecture: amd64
+      os: linux

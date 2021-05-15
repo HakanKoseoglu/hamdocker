@@ -1,0 +1,6 @@
+image: hakankoseoglu/wsjtx:latest
+manifests:
+  - image: hakankoseoglu/wsjtx:x86_64
+    platform:
+      architecture: amd64
+      os: linux
