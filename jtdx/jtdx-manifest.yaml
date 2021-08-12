@@ -1,0 +1,12 @@
+image: hakankoseoglu/jtdx:latest
+manifests:
+  - image: hakankoseoglu/jtdx:x86_64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: hakankoseoglu/jtdx:aarch64
+    platform:
+      architecture: arm64
+      os: linux
+
+
