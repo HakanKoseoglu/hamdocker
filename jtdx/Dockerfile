@@ -48,6 +48,7 @@ RUN /bin/sh -c echo $TZ > /etc/timezone \
 	libqt5multimedia5 \
 	libqt5sql5 \
 	libqt5serialport5 \
+	libqt5websockets5 \
 	locales \
 	libboost-log1.74.0 \
 	libgfortran5 \
@@ -55,7 +56,8 @@ RUN /bin/sh -c echo $TZ > /etc/timezone \
 	libpulse0 \
 	fonts-symbola \
 	alsa-utils \
-	pulseaudio \ 
+	pulseaudio \
+        libportaudio2 \
 && mkdir /jtdx/ /hamlib//
 ENV LC_ALL=C
 WORKDIR /

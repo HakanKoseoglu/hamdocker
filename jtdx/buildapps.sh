@@ -26,6 +26,7 @@ qtmultimedia5-dev \
 qtbase5-dev \
 qtdeclarative5-dev \
 texinfo \
+portaudio19-dev \
 && apt-get clean 
 
 ## Build Hamlib for JTDX

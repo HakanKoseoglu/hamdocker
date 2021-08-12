@@ -4,3 +4,8 @@ manifests:
     platform:
       architecture: amd64
       os: linux
+  - image: hakankoseoglu/wsjtx:aarch64
+    platform:
+      architecture: arm64
+      os: linux
+

@@ -56,6 +56,7 @@ RUN /bin/sh -c echo $TZ > /etc/timezone \
 	fonts-symbola \
 	alsa-utils \
 	pulseaudio \ 
+        libportaudio2 \
 && mkdir /wsjtx/ /hamlib//
 ENV LC_ALL=C
 WORKDIR /

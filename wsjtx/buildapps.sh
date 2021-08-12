@@ -25,6 +25,8 @@ qtmultimedia5-dev \
 qtbase5-dev \
 qtdeclarative5-dev \
 texinfo \
+libportaudio2 \
+portaudio19-dev \
 && apt-get clean 
 
 ### Build Hamlib for WSJTX
@@ -46,6 +48,9 @@ make install-strip
 mkdir -p /wsjtx-src/build
 cd /wsjtx-src
 git clone git://git.code.sf.net/p/wsjt/wsjtx src
+
+#expiry hack
+sed -i s#2021#2031#g /wsjtx-src/src/widgets/mainwindow.cpp
 
 cd /wsjtx-src/build
 cmake -D CMAKE_PREFIX_PATH=/hamlib \
