@@ -1,4 +1,6 @@
 #Run me like this
+xhost +"local:docker@"
+
  docker run -it --rm \
  --name wsjtx \
  --device /dev/snd:/dev/snd \

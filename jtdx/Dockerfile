@@ -67,6 +67,7 @@ COPY jtdx.sh /jtdx/jtdx.sh
 CMD ["/jtdx/jtdx.sh"]
 
 #Run me like this
+# xhost +"local:docker@"
 # docker run -it --rm \
 # --name jtdx \
 # --device /dev/snd:/dev/snd \

@@ -64,6 +64,7 @@ COPY --from=js8builder /hamlib/ /hamlib/
 CMD ["/js8call/bin/js8call"]
 
 #Run me like this
+# xhost +"local:docker@"
 # docker run -it --rm \
 # --name js8call \
 # --device /dev/snd:/dev/snd \

@@ -66,6 +66,7 @@ COPY wsjtx.sh /wsjtx/wsjtx.sh
 CMD ["/wsjtx/wsjtx.sh"]
 
 #Run me like this
+# xhost +"local:docker@"
 # docker run -it --rm \
 # --name wsjtx \
 # --device /dev/snd:/dev/snd \
@@ -75,7 +76,7 @@ CMD ["/wsjtx/wsjtx.sh"]
 # -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
 # -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
 # -v ~/.config/pulse/cookie:/root/.config/pulse/cookie \
-# -v volume/.local/share/WSJT-X:/root/.local/share/WSJT-X
+# -v volume/.local/share/WSJT-X:/root/.local/share/WSJT-X \
 # -v ~/volume/.config:/root/.config \
 # -v /dev/shm:/dev/shm \
 # -v /tmp/.X11-unix:/tmp/.X11-unix \
