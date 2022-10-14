@@ -52,6 +52,9 @@ git clone git://git.code.sf.net/p/wsjt/wsjtx src
 #expiry hack
 sed -i s#2021#2031#g /wsjtx-src/src/widgets/mainwindow.cpp
 
+find /usr/share/qt5/translations  -name qtbase*qm|xargs rm -rf
+find /usr/share/qt5/translations  -name qt_*qm|xargs rm -rf
+
 cd /wsjtx-src/build
 cmake -D CMAKE_PREFIX_PATH=/hamlib \
     -DWSJT_SKIP_MANPAGES=ON -DWSJT_GENERATE_DOCS=OFF \
