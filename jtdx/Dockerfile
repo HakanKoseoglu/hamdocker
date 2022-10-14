@@ -40,7 +40,6 @@ RUN /bin/sh -c echo $TZ > /etc/timezone \
     libcanberra-gtk* \
 	libgl1-mesa-dri \
 	libgl1-mesa-glx \
-	libpangox-1.0-0 \
 	libpulse0 \
 	libv4l-0 \
 	libfftw3-3 \
@@ -67,7 +66,6 @@ COPY jtdx.sh /jtdx/jtdx.sh
 CMD ["/jtdx/jtdx.sh"]
 
 #Run me like this
-# xhost +"local:docker@"
 # docker run -it --rm \
 # --name jtdx \
 # --device /dev/snd:/dev/snd \

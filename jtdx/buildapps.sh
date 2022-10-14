@@ -33,7 +33,7 @@ portaudio19-dev \
 
 mkdir /jtdx-src/hamlib-src
 cd /jtdx-src/hamlib-src
-git clone git://github.com/jtdx-project/jtdxhamlib src
+git clone https://github.com/jtdx-project/jtdxhamlib src
 cd src
 ./bootstrap
 mkdir ../build
@@ -49,8 +49,7 @@ make install-strip
 ### Build JTDX
 mkdir -p /jtdx-src/build
 cd /jtdx-src
-git clone git://github.com/jtdx-project/jtdx src
-
+git clone https://github.com/jtdx-project/jtdx.git src
 cd /jtdx-src/build
 cmake -D CMAKE_PREFIX_PATH=/hamlib \
     -DWSJT_SKIP_MANPAGES=ON -DWSJT_GENERATE_DOCS=OFF \
