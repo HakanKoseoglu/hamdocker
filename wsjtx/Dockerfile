@@ -42,7 +42,7 @@ RUN /bin/sh -c echo $TZ > /etc/timezone \
 	libgl1-mesa-glx \
 	libpulse0 \
 	libv4l-0 \
-	libfftw3-3 \
+	libfftw3-double3 \
 	libqt5printsupport5 \
 	libqt5multimedia5 \
 	libqt5sql5 \
